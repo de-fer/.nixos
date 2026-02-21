@@ -20,6 +20,7 @@
       hypridle
       hyprpicker
       hyprpolkitagent
+      hyprlauncher
     ];
   };
 }

@@ -2,7 +2,7 @@
 
   description = "My NixOS configuration";
 
-  outputs = { self, nixpkgs, home-manager, ... }:
+  outputs = { self, nixpkgs, home-manager, ... }@inputs:
   let
     lib = nixpkgs.lib;
     system = "x86_64-linux";
@@ -18,7 +18,10 @@
     homeConfigurations = {
       de-fer = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-	modules = [ ./home/de-fer.nix ];
+	extraSpecialArgs = { inherit inputs; };
+	modules = [ 
+	  ./home/de-fer.nix
+	];
       };
     };
   };

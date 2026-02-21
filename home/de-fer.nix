@@ -11,7 +11,6 @@
 
   home.packages = with pkgs; [
     # TTY
-    neovim
     git
     lazygit
 
@@ -24,4 +23,8 @@
     userName = "de-fer";
     userEmail = "dm.chuenkov@gmail.com";
   };
+
+  imports = [
+    ../modules/home/neovim.nix
+  ];
 }
