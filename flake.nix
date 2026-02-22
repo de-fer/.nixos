@@ -11,17 +11,17 @@
     nixosConfigurations = {
       laptop-pavilion = lib.nixosSystem {
         inherit system;
-	modules = [ ./configuration.nix ];
+	      modules = [ ./hosts/laptop-pavilion/configuration.nix ];
       };
     };
 
     homeConfigurations = {
       de-fer = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-	extraSpecialArgs = { inherit inputs; };
-	modules = [ 
-	  ./home/de-fer.nix
-	];
+	      extraSpecialArgs = { inherit inputs; };
+	      modules = [ 
+	        ./home/de-fer.nix
+	      ];
       };
     };
   };

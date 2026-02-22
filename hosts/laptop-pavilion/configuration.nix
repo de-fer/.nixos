@@ -9,21 +9,21 @@
     ./hardware-configuration.nix
 
     # System
-    ./system/boot.nix
-    ./system/locale.nix
-    ./system/users.nix
-    ./system/fonts.nix
+    ../.././system/boot.nix
+    ../.././system/locale.nix
+    ../.././system/users.nix
+    ../.././system/fonts.nix
 
     # Desktop
-    ./desktop/wayland.nix
-    ./desktop/hyprland.nix
-    ./desktop/display-manager.nix
+    ../.././desktop/wayland.nix
+    ../.././desktop/hyprland.nix
+    ../.././desktop/display-manager.nix
 
     # Programs
-    ./programs/kitty.nix
+    ../.././programs/kitty.nix
     
     # Hardware
-    ./hardware/amd.nix
+    ../.././hardware/amd.nix
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -46,6 +46,7 @@
     curl
     git
     lazygit
+    networkmanagerapplet
   ];
 
   networking.firewall.enable = false;

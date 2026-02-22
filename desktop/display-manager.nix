@@ -7,12 +7,17 @@
     sddm = {
       enable = true;
       wayland.enable = true;
-      theme = "where_is_my_sddm_theme";
+      theme = "sddm-astronaut-theme";
+
+      extraPackages = with pkgs.kdePackages; [
+        qtmultimedia
+        qt5compat
+        qtsvg
+      ];
     };  
-    # defaultSession = "hyperland-uwsm";
   };
   
   environment.systemPackages = with pkgs; [
-    where-is-my-sddm-theme
+    sddm-astronaut
   ];
 }
