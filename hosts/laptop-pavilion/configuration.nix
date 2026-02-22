@@ -9,21 +9,22 @@
     ./hardware-configuration.nix
 
     # System
-    ../.././system/boot.nix
-    ../.././system/locale.nix
-    ../.././system/users.nix
-    ../.././system/fonts.nix
+    ../../system/boot.nix
+    ../../system/locale.nix
+    ../../system/users.nix
+    ../../system/fonts.nix
 
     # Desktop
-    ../.././desktop/wayland.nix
-    ../.././desktop/hyprland.nix
-    ../.././desktop/display-manager.nix
+    ../../desktop/wayland.nix
+    ../../desktop/hyprland.nix
+    ../../desktop/display-manager.nix
 
     # Programs
-    ../.././programs/kitty.nix
+    ../../programs/kitty.nix
+    ../../modules/home/nvf.nix
     
     # Hardware
-    ../.././hardware/amd.nix
+    ../../hardware/amd.nix
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -50,6 +51,11 @@
   ];
 
   networking.firewall.enable = false;
+
+  stylix = {
+    enable = true;
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-hard.yaml";
+  };
 
   # Copy the NixOS configuration file and link it from the resulting system
   # (/run/current-system/configuration.nix). This is useful in case you

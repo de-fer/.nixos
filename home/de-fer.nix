@@ -25,6 +25,5 @@
   };
 
   imports = [
-    ../modules/home/neovim.nix
   ];
 }
