@@ -5,7 +5,6 @@
       "nvf/default.nix"
       "amd.nix"
       "boot.nix"
-      "kitty.nix"
       "users.nix"
     ])
 

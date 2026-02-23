@@ -1,5 +1,4 @@
 {
-
   description = "My NixOS configuration";
 
   outputs = {
@@ -27,7 +26,6 @@
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-	          extraSpecialArgs = { inherit inputs; };
 
             home-manager.users.de-fer = import ./hosts/laptop-pavilion/home.nix;
           }

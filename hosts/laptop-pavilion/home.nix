@@ -4,9 +4,6 @@
   home.stateVersion = "25.11";
 
   home.packages = with pkgs; [
-    # TTY
-    git
-    # Programs
     firefox
   ];
 
@@ -17,5 +14,6 @@
   };
 
   imports = [
+    ../../modules/home/default.nix
   ];
 }
