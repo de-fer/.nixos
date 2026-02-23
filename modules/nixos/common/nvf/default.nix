@@ -45,8 +45,8 @@
   };
 
   imports = [
-    ./nvf/lualine.nix
-    ./nvf/treesitter.nix
-    ./nvf/neo-tree.nix
+    ./lualine.nix
+    ./treesitter.nix
+    ./neo-tree.nix
   ];
 }

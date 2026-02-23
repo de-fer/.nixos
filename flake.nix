@@ -9,32 +9,32 @@
     stylix,
     nvf,
     ...
-  }@inputs:
-  let
+  }@inputs: let
     lib = nixpkgs.lib;
     system = "x86_64-linux";
     pkgs = nixpkgs.legacyPackages.${system};
-  in{
+  in {
     nixosConfigurations = {
+
       laptop-pavilion = lib.nixosSystem {
         inherit system;
+        specialArgs = { inherit inputs; };
 	      modules = [
+          ./hosts/laptop-pavilion/default.nix
           stylix.nixosModules.stylix
           nvf.nixosModules.default
-          ./hosts/laptop-pavilion/configuration.nix
+
+          home-manager.nixosModules.home-manager {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+	          extraSpecialArgs = { inherit inputs; };
+
+            home-manager.users.de-fer = import ./hosts/laptop-pavilion/home.nix;
+          }
+
         ];
       };
-    };
 
-    homeConfigurations = {
-      de-fer = home-manager.lib.homeManagerConfiguration {
-        inherit pkgs;
-	      extraSpecialArgs = { inherit inputs; };
-	      modules = [ 
-          stylix.homeModules.stylix
-	        ./home/de-fer.nix
-	      ];
-      };
     };
   };
 

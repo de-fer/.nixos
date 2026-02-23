@@ -8,23 +8,8 @@
   imports = [
     ./hardware-configuration.nix
 
-    # System
-    ../../system/boot.nix
-    ../../system/locale.nix
-    ../../system/users.nix
-    ../../system/fonts.nix
-
-    # Desktop
-    ../../desktop/wayland.nix
-    ../../desktop/hyprland.nix
-    ../../desktop/display-manager.nix
-
-    # Programs
-    ../../programs/kitty.nix
-    ../../modules/home/nvf.nix
-    
-    # Hardware
-    ../../hardware/amd.nix
+    # nixos modules
+    ../../modules/nixos/default.nix
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
