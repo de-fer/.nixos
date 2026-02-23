@@ -6,5 +6,4 @@
     enable = true;
     # settings = {};
   };
-  # stylix.targets.kitty.enable = true;
 }

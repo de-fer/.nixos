@@ -8,10 +8,6 @@
       "users.nix"
     ])
 
-    (map (f: ./desktop + "/${f}") [
-      "display-manager.nix"
-      "hyprland.nix"
-      "wayland.nix"
-    ])
+    [ ./desktop/default.nix ]
   ];
 }

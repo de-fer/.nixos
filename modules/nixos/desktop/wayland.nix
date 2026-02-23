@@ -19,17 +19,9 @@
  };
 
  environment.systemPackages = with pkgs; [
-   # Basic wayland-utils
-   wl-clipboard
-   wl-clip-persist
-   cliphist
-
-   dunst
-   waybar
-   wofi
-
-   brightnessctl
-   # pavucontrol
-   # playerctl
+    # clipboard
+    wl-clipboard
+    wl-clip-persist
+    cliphist
  ];
 }

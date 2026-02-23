@@ -7,7 +7,6 @@
 {
   imports = [
     ./hardware-configuration.nix
-
     # nixos modules
     ../../modules/nixos/default.nix
   ];
@@ -31,7 +30,6 @@
     curl
     git
     lazygit
-    networkmanagerapplet
   ];
 
   networking.firewall.enable = false;

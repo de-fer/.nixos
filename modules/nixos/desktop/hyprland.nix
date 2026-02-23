@@ -1,26 +1,24 @@
-# desktop/hyprland.nix
-
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, inputs, ... }:
 
 {
   programs.hyprland = {
     enable = true;
     withUWSM = true;
-    xwayland.enable = true;
+    package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
+    portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
   };
 
-  xdg.portal.extraPortals = with pkgs; [
-    xdg-desktop-portal-hyprland
+  # xdg.portal.extraPortals = with pkgs; [
+  #   xdg-desktop-portal-hyprland
+  # ];
+
+  environment.systemPackages = with pkgs; [
+    waybar       # панелька
+    hyprpaper    # обои
+    hyprlock     # экран блокировки
+    hypridle     # уведомления
+    hyprlauncher # запускалка
+    nautilus     # проводник
+    networkmanagerapplet # настрйоки интернета
   ];
-
-  environment = {
-    systemPackages = with pkgs; [
-      hyprpaper # wallpaper
-      hyprlock  # lockscreen
-      hypridle
-      hyprpicker
-      hyprpolkitagent
-      hyprlauncher
-    ];
-  };
 }

@@ -5,6 +5,7 @@
     self,
     nixpkgs,
     home-manager,
+    hyprland,
     stylix,
     nvf,
     ...
@@ -43,6 +44,8 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    hyprland.url = "github:hyprwm/Hyprland";
     
     stylix = {
       url = "github:nix-community/stylix";
