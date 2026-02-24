@@ -12,7 +12,9 @@
     bind = [
       # ===basic===
       "$mod, Return,    exec, $term" # терминал
+      "$mod, T,         exec, $term" # терминал
       "$mod, Backspace, killactive," # закрыть окно
+      "$mod, Q, killactive,        " # закрыть окно
       "$mod, Space,     exec, $menu" # запускалка
       "$mod, E, exec, $fileManager"  # проводник
       "$mod, Y, exec, $cliphist"     # история копирования

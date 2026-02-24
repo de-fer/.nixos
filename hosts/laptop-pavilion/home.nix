@@ -9,8 +9,10 @@
 
   programs.git = {
     enable = true;
-    userName = "de-fer";
-    userEmail = "dm.chuenkov@gmail.com";
+    settings = {
+      user.name = "de-fer";
+      user.email = "dm.chuenkov@gmail.com";
+    };
   };
 
   imports = [

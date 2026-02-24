@@ -29,8 +29,8 @@
         rounding = 24; #0 # радиус скругления
         rounding_power = 1.3; #2 # сила скругления
         # прозрачность #1.0 
-        active_opacity = 0.8;
-        inactive_opacity = 0.7;
+        active_opacity = 0.9;
+        inactive_opacity = 0.9;
         blur = {
           enabled = true; #true
           size = 3; #8
