@@ -36,6 +36,7 @@
 
   stylix = {
     enable = true;
+    polarity = "dark";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/tokyo-night-storm.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/ayu-mirage.yaml";
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/3024.yaml";

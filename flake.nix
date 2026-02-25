@@ -4,10 +4,11 @@
   outputs = {
     self,
     nixpkgs,
-    home-manager,
     hyprland,
     stylix,
     nvf,
+    home-manager,
+    zen-browser,
     ...
   }@inputs: let
     lib = nixpkgs.lib;
@@ -27,6 +28,7 @@
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
+            home-manager.extraSpecialArgs = { inherit inputs; };
 
             home-manager.users.de-fer = import ./hosts/laptop-pavilion/home.nix;
           }
@@ -56,6 +58,11 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-  };
 
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
+    };
+  };
 }

@@ -4,7 +4,6 @@
   home.stateVersion = "25.11";
 
   home.packages = with pkgs; [
-    firefox
   ];
 
   programs.git = {
