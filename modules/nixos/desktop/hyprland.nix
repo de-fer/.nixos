@@ -16,7 +16,7 @@
     waybar       # панелька
     hyprpaper    # обои
     hyprlock     # экран блокировки
-    hypridle     # уведомления
+    # hypridle     # уведомления
     hyprlauncher # запускалка
     nautilus     # проводник
     networkmanagerapplet # настрйоки интернета

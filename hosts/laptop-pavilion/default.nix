@@ -44,18 +44,18 @@
     base16Scheme = "${pkgs.base16-schemes}/share/themes/monokai.yaml";
     fonts = {
       monospace = {
-        package = pkgs.nerd-fonts.fira-code;
-        name = "FiraCode Nerd Font";
+        package = pkgs.nerd-fonts.comic-shanns-mono;
+        name = "ComicShannsMono Nerd Font";
       };
 
       serif = {
-        package = pkgs.dejavu_fonts;
-        name = "DejaVu Serif";
+        package = pkgs.comic-relief;
+        name = "Comic relief";
       };
 
       sansSerif = {
-        package = pkgs.dejavu_fonts;
-        name = "DejaVu Sans";
+        package = pkgs.comic-relief;
+        name = "Comic relief";
       };
     };
   };
