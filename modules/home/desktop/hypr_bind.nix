@@ -20,8 +20,9 @@
       "$mod, Y, exec, $cliphist"     # история копирования
       "$mod, V, togglefloating,"     # переключить плавающее окно
       "$mod, C, togglesplit,"        # переключить режим разделения (верт/гор)
+      "$mod, F, fullscreen,        " # фуллскрин
       "$mod, N, exec, hyprlock"      # экран блокировки
-      "$mod, M, exit,"
+      "$mod, M, exit,"               # завершить сессию
       # ===navigation=== (like VIM)
       "$mod, H, movefocus, l"
       "$mod, L, movefocus, r"
