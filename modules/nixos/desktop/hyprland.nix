@@ -14,7 +14,6 @@
 
   environment.systemPackages = with pkgs; [
     waybar       # панелька
-    hyprpaper    # обои
     hyprshot     # скриншоты
     hyprlock     # экран блокировки
     hyprlauncher # запускалка

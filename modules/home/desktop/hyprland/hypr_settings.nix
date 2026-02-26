@@ -63,7 +63,7 @@
       };
 
       misc = {
-        disable_hyprland_logo = false; # если true - выкл дефолтные рандом обои хайпрленда
+        disable_hyprland_logo = true; # если true - выкл дефолтные рандом обои хайпрленда
         disable_autoreload = true;
         render_unfocused_fps = 30; #15
       };
