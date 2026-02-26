@@ -21,6 +21,8 @@
       "$mod, V, togglefloating,"     # переключить плавающее окно
       "$mod, C, togglesplit,"        # переключить режим разделения (верт/гор)
       "$mod, F, fullscreen,        " # фуллскрин
+      "$mod,       P, exec, hyprshot -m region" # скриншот области
+      "$mod SHIFT, P, exec, hyprshot -m window" # скриншот окна
       "$mod, N, exec, hyprlock"      # экран блокировки
       "$mod, M, exit,"               # завершить сессию
       # ===navigation=== (like VIM)
