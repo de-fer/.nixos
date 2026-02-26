@@ -4,6 +4,11 @@
 {
   programs.kitty = {
     enable = true;
-    # settings = {};
+    settings = {
+      shell = "zsh";
+      scrollbar = "never";
+      confirm_os_window_close = 0;
+      sync_to_monitor = false;
+    };
   };
 }

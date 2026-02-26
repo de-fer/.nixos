@@ -5,5 +5,6 @@
     ./kitty.nix
     ./telegram/default.nix
     ./zen-browser.nix
+    ./zsh/defaul.nix
   ];
 }
