@@ -11,4 +11,10 @@
 
   home.packages = with pkgs; [
   ];
+
+  imports = [
+    ./hypr_autoexec.nix
+    ./hypr_bind.nix
+    ./hypr_settings.nix
+  ];
 }
