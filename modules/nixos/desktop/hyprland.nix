@@ -17,7 +17,6 @@
     hyprpaper    # обои
     hyprshot     # скриншоты
     hyprlock     # экран блокировки
-    hypridle     # управление сномс
     hyprlauncher # запускалка
     nautilus     # проводник
     networkmanagerapplet # настрйоки интернета
