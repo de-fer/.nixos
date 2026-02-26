@@ -15,8 +15,9 @@
   environment.systemPackages = with pkgs; [
     waybar       # панелька
     hyprpaper    # обои
+    hyprshot     # скриншоты
     hyprlock     # экран блокировки
-    # hypridle     # уведомления
+    hypridle     # управление сномс
     hyprlauncher # запускалка
     nautilus     # проводник
     networkmanagerapplet # настрйоки интернета
