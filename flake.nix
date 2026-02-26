@@ -17,7 +17,7 @@
   in {
     nixosConfigurations = {
 
-      laptop-pavilion = lib.nixosSystem {
+      laptop-pavilion = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = { inherit inputs; };
 	      modules = [

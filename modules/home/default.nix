@@ -3,7 +3,7 @@
   imports = [
     ./desktop/default.nix
     ./kitty.nix
-    ./telegram/telegram.nix
+    ./telegram/default.nix
     ./zen-browser.nix
   ];
 }
