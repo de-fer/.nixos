@@ -19,7 +19,7 @@
         layout = "dwindle"; #dwindle # какой макет [dwindle(новое актив)/master(пассив)/scrolling/monocle]
         border_size = 2; #1       # размер рамки
         gaps_in = 5; #5           # разрыв между окнами
-        gaps_out = 20; #20        # разрыв между окном и рамкой экрана
+        gaps_out = 15; #20        # разрыв между окном и рамкой экрана
         float_gaps = 0; #0 
         no_focus_fallback = false; #flase # true - если окно последнее - не переключит на селдующий воркспейс
         resize_on_border = true; #false    # изменять размер окон перетаскивая за границу

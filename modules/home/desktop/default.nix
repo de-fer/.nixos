@@ -5,5 +5,6 @@
     ./swaync.nix
     ./hypridle.nix
     ./hyprpaper.nix
+    ./waybar/default.nix
   ];
 }

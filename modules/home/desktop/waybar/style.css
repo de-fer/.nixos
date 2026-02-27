@@ -1,0 +1,24 @@
+* {
+  border: none;
+  font-size: 20px;
+
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+window.top#waybar {
+  border-radius: 100px;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  border: 1px solid;
+  transition: all 200ms ease-in-out;
+}
+#workspaces button.active {
+  min-width: 30px;
+}
+
+#clock {
+}
