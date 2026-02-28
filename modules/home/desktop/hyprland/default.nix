@@ -13,8 +13,8 @@
   ];
 
   imports = [
-    ./hypr_autoexec.nix
-    ./hypr_bind.nix
-    ./hypr_settings.nix
+    ./autoexec.nix
+    ./bind.nix
+    ./settings.nix
   ];
 }

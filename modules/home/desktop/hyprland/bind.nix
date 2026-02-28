@@ -6,7 +6,7 @@
     "$term"        = "kitty";
     "$fileManager" = "nautilus";
     "$menu"    = "hyprlauncher";
-    "$cliphist" = "cliphist list | wofi --dmenu | cliphist decpde | wl-copy";
+    "$cliphist" = "cliphist list | $menu --dmenu | cliphist decpde | wl-copy";
 
     "$mod" = "SUPER";
     bind = [
@@ -19,7 +19,6 @@
       "$mod, E, exec, $fileManager"  # проводник
       "$mod, Y, exec, $cliphist"     # история копирования
       "$mod, V, togglefloating,"     # переключить плавающее окно
-      "$mod, C, togglesplit,"        # переключить режим разделения (верт/гор)
       "$mod, F, fullscreen,        " # фуллскрин
       "$mod,       P, exec, hyprshot -m region -o '~/.screenshots'" # скриншот области
       "$mod SHIFT, P, exec, hyprshot -m window -o '~/.screenshots'" # скриншот окна
