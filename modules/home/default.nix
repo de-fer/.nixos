@@ -2,9 +2,10 @@
 {
   imports = [
     ./desktop/default.nix
-    ./kitty.nix
     ./telegram/default.nix
-    ./zen-browser.nix
     ./zsh/defaul.nix
+    ./kitty.nix
+    ./nixcord.nix
+    ./zen-browser.nix
   ];
 }

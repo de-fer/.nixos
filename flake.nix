@@ -8,6 +8,7 @@
     stylix,
     nvf,
     home-manager,
+    nixcord,
     zen-browser,
     ...
   }@inputs: let
@@ -58,6 +59,8 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nixcord.url = "github:FlameFlag/nixcord";
 
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
