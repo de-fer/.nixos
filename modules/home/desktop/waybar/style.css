@@ -11,14 +11,31 @@ window.top#waybar {
   border-radius: 100px;
 }
 
+#workspaces {
+  margin-left: 10px;
+}
 #workspaces button {
+  margin: 5px 0;
   padding: 0 5px;
   border: 1px solid;
+  border-radius: 30%;
   transition: all 200ms ease-in-out;
 }
 #workspaces button.active {
   min-width: 30px;
 }
 
+#tray {
+  margin: 5px 10px;
+}
+#tray .active {
+  border: 1px solid;
+  border-radius: 30%;
+}
+
 #clock {
+}
+
+#battery {
+  margin-right: 10px;
 }

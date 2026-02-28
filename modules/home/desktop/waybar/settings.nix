@@ -17,6 +17,7 @@
 
       modules-left = [
         "hyprland/workspaces"
+        "tray"
       ];
       "hyprland/workspaces" = {
         format = "{icon}";
@@ -37,6 +38,10 @@
           "4" = [];
           "5" = [];
         };
+      };
+      "tray" = {
+        icon-size = 25;
+        spacing = 5;
       };
 
       modules-center = [
