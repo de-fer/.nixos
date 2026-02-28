@@ -9,6 +9,7 @@
     ./graphic_hardware.nix
     ./network.nix
     ./pipewire.nix
+    ./steam.nix
     ./stylix.nix
     ./users.nix
   ];
