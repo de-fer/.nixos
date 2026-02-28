@@ -2,12 +2,14 @@
 
 {
   imports = [
-    ./amd.nix
-    ./boot.nix
     ./nvf/default.nix
+    ./vpn/default.nix
+    ./basic.nix
+    ./boot.nix
+    ./graphic_hardware.nix
+    ./network.nix
     ./pipewire.nix
     ./stylix.nix
     ./users.nix
-    ./vpn/default.nix
   ];
 }
