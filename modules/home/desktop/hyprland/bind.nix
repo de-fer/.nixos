@@ -44,6 +44,10 @@
       # ===special workspaces===
       # "$mod, S, togglespecialworkspace, name"
       # "$mod SHIFT, S, movetoworkspace, special:name"
+      
+      # яркость
+      ", XF86MonBrightnessUp,   exec, brightnessctl s +5%"
+      ", XF86MonBrightnessDown, exec, brightnessctl s 5%-"
     ];
     bindm = [
       # ===move/resize mouse dragging===
