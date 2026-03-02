@@ -6,6 +6,7 @@
     ./zsh/defaul.nix
     ./kitty.nix
     ./nixcord.nix
+    ./obsidian.nix
     ./prismlauncher.nix
     ./zen-browser.nix
   ];
