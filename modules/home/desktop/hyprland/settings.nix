@@ -52,7 +52,7 @@
         repeat_delay = 600; #600 # задержка перед повтором в мс 
 
         follow_mouse = 1;
-        sensitivity = -0.8;
+        sensitivity = 0.0;
         rotation = 354; #0 # поворот мыши (0-359 int)
 
 
